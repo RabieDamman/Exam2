@@ -1,0 +1,76 @@
+.back-des{ 
+   background-image: url("imgs/imges/10.jpg");
+   background-size: cover;
+   height: 50vh;
+   position: relative;
+}
+
+.back-des-hover{
+    position: absolute;
+}
+.back-des__h1{
+    color: rgb(39, 219, 93);
+    font-size: 70px;
+}
+
+
+.back-des__p{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.back-des__h1:hover,.back-des__p:hover{
+    background-color: rgba(224, 101, 101, 0.5);
+    border-radius: 5px;
+}
+
+@media(max-width:767px){
+    .back-des__h1{
+        
+        font-size: 40px;
+    }
+    
+    
+    .back-des__p{
+        
+        font-weight: bold;
+        font-size: large;
+    }
+}
+.dropdown{
+    position: relative;
+    
+}
+
+.dropdownbtn{
+    background-color: brown;
+    padding: 0.5em;
+    color: #fff;
+}
+.content{
+    position: absolute;
+    transition: all .2s ease-in-out;
+    width: 160px;
+    z-index: 1;
+/* display: none; */
+    opacity: 0;
+}
+
+.dropdown:hover .content{
+    display: block;
+    opacity: 1;
+    transform: translate(90px);
+}
+.content li{
+    background-color: black;
+    padding: 16px;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+
+}
+
+.content li:hover{
+    background-color: blue;
+}
